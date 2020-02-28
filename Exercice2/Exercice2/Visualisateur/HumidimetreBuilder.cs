@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Exercice2.Convertisseur
 {
-    class ThermoHumidimetre
+    class HumidimetreBuilder
     {
     }
 }
