@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tsile\\Documents\\A5\\PATRON\\Introspection\\TP-Introspection\\Exercice2\\Exercice2\\Exercice2.csproj": {}
+    "C:\\Users\\Ramatoulaye Leye\\Desktop\\UQAC\\UQAC_Session2\\Patrons_modeles\\TP2\\TP-Introspection\\Exercice2\\Exercice2\\Exercice2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tsile\\Documents\\A5\\PATRON\\Introspection\\TP-Introspection\\Exercice2\\Exercice2\\Exercice2.csproj": {
+    "C:\\Users\\Ramatoulaye Leye\\Desktop\\UQAC\\UQAC_Session2\\Patrons_modeles\\TP2\\TP-Introspection\\Exercice2\\Exercice2\\Exercice2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tsile\\Documents\\A5\\PATRON\\Introspection\\TP-Introspection\\Exercice2\\Exercice2\\Exercice2.csproj",
+        "projectUniqueName": "C:\\Users\\Ramatoulaye Leye\\Desktop\\UQAC\\UQAC_Session2\\Patrons_modeles\\TP2\\TP-Introspection\\Exercice2\\Exercice2\\Exercice2.csproj",
         "projectName": "Exercice2",
-        "projectPath": "C:\\Users\\tsile\\Documents\\A5\\PATRON\\Introspection\\TP-Introspection\\Exercice2\\Exercice2\\Exercice2.csproj",
-        "packagesPath": "C:\\Users\\tsile\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tsile\\Documents\\A5\\PATRON\\Introspection\\TP-Introspection\\Exercice2\\Exercice2\\obj\\",
+        "projectPath": "C:\\Users\\Ramatoulaye Leye\\Desktop\\UQAC\\UQAC_Session2\\Patrons_modeles\\TP2\\TP-Introspection\\Exercice2\\Exercice2\\Exercice2.csproj",
+        "packagesPath": "C:\\Users\\Ramatoulaye Leye\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ramatoulaye Leye\\Desktop\\UQAC\\UQAC_Session2\\Patrons_modeles\\TP2\\TP-Introspection\\Exercice2\\Exercice2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\tsile\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ramatoulaye Leye\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

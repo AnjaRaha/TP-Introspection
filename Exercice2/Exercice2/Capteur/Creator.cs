@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Exercice2.Capteur
 {
-    class Creator
+    class Creator : Creator
     {
     }
 }
