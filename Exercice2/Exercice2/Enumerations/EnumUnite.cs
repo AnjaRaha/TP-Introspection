@@ -6,9 +6,9 @@ namespace Exercice2.Enumerations
 {
     public enum EnumUnite
     {
-        Celcius,
-        Faranheit,
-        Humidite1,
-        Humidite2
+        Unite1,
+        Unite2,
+        Unite3,
+        Unite4
     }
 }

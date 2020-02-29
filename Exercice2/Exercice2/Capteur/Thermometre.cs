@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Exercice2.Capteur
 {
-    [Capteur(EnumType.Temperature, EnumUnite.Faranheit)]
+    [Capteur(EnumType.Temperature, EnumUnite.Unite1)]
     class Thermometre : SensorObject
     {
       public Thermometre()

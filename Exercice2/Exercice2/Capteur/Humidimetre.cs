@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Exercice2.Capteur
 {
-    [Capteur(EnumType.Humidite, EnumUnite.Humidite1)]
+    [Capteur(EnumType.Humidite, EnumUnite.Unite2)]
     class Humidimetre : SensorObject
     {
         public Humidimetre()

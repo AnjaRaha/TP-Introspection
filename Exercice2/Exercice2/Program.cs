@@ -27,19 +27,18 @@ namespace Exercice2
             gestionnaire.AjouterCapteur(humidimetre);
 
             //Mise à jour
-           
-          /*  gestionnaire.mettreAjour();
-            Thread.Sleep(1000);
-            gestionnaire.mettreAjour();
-            Thread.Sleep(1000);
-            gestionnaire.mettreAjour();
-            Thread.Sleep(1000);*/
+      
 
             for(int i=0; i < 3; i++)
             {
                 gestionnaire.mettreAjour();
-                Thread.Sleep(4000); 
+                Thread.Sleep(1000); 
             }
+
+            //Changement systeme unités
+            gestionnaire.changeSystemeImperial();
+
+
 
 
 

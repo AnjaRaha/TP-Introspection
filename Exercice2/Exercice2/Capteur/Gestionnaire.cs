@@ -11,21 +11,16 @@ namespace Exercice2.Capteur
 {
     class Gestionnaire
     {
-        private List<SensorObject> listeCapteurs;
-        private List<Visualisateur> listeVisualisateurs;
+       
         private Dictionary<EnumUnite, EnumUnite> typesConversions;
+        private Dictionary<SensorObject, Visualisateur> systeme;
 
-
-        public Gestionnaire(List<SensorObject> listeCapteurs)
-        {
-            this.listeCapteurs = listeCapteurs;
-        }
 
         public Gestionnaire()
         {
-            this.listeCapteurs = new List<SensorObject>();
-            this.listeVisualisateurs = new List<Visualisateur>();
+           
             this.typesConversions = new Dictionary<EnumUnite, EnumUnite>();
+            this.systeme = new Dictionary<SensorObject, Visualisateur>();
 
             updateTypesConversion();
            
@@ -62,52 +57,72 @@ namespace Exercice2.Capteur
         public void AjouterCapteur(SensorObject capteur)
         {
 
-            listeCapteurs.Add(capteur);
 
             // création d'un visualisateur
             BuilderVisualisateur builderConcrete = new BuilderConcrete(capteur.getType(),capteur.getUnite(), capteur.getDonnee());
 
-            //ajout dans la liste des visualisateur avec le type et l'unité du capteur qu'on ajoute
-            listeVisualisateurs.Add(builderConcrete.buildVisualisateur(capteur));
+            //ajout dans le dico 
+
+
+            systeme.Add(capteur, builderConcrete.buildVisualisateur(capteur));
 
 
         }
 
         public void SupprimerCapteur(SensorObject capteur)
         {
-                int indexCapteur = listeCapteurs.IndexOf(capteur);
-                listeCapteurs.Remove(capteur);
+         
+                systeme.Remove(capteur);
 
-                 //on supprime le visualisateur associé au capteur
-                listeVisualisateurs.RemoveAt(indexCapteur);      
         }
 
    
         public void mettreAjour()
         {
-            Thread newThread = new Thread(new ThreadStart(sense)) { Name = "Thread de mise à jour" };
+            Thread newThread = new Thread(new ThreadStart(sense)) { Name = "Thread de Sense()" };
             newThread.Start();
             
         }
 
         public void sense()
         {
-            Console.WriteLine("/*************  Mise à jour des capteurs  ************/");
+            
+            Console.WriteLine("/*************  Mise à jour des capteurs :" + String.Concat(" ********* Executed by ", Thread.CurrentThread.Name));
             Console.WriteLine();
-            foreach (SensorObject capteur in listeCapteurs)
+
+
+            BuilderVisualisateur builderConcrete = new BuilderConcrete();
+            foreach (KeyValuePair<SensorObject, Visualisateur> entry in systeme)
             {
-                capteur.emettreDonnees();
+                entry.Key.emettreDonnees();
+
+                entry.Value.update(entry.Key);
+                entry.Value.Visualiser();
             }
 
+          
+        }
 
-            //Liste capteurs
-            Console.WriteLine(listeCapteurs);
-
-            foreach (Visualisateur visual in listeVisualisateurs)
+        public void changeSystemeImperial()
+        {
+            Console.WriteLine();
+            Console.WriteLine("/***********************************************/");
+            Console.WriteLine("/**       CHANGEMENT SYSTEME IMPERIAL       ****/");
+            Console.WriteLine("/***********************************************/");
+         
+            BuilderVisualisateur builderConcrete = new BuilderConcrete();
+            foreach (KeyValuePair<SensorObject, Visualisateur> entry in systeme)
             {
-                visual.Visualiser();
-            }
 
+                builderConcrete.buildNewSystemUnite(entry.Value);
+
+                if (!typesConversions.ContainsKey(entry.Key.getUnite()))
+                {
+                    typesConversions.Add(entry.Key.getUnite(), entry.Value.getUnite());
+                }
+                
+              
+            }
             updateTypesConversion();
         }
     }

@@ -14,6 +14,11 @@ namespace Exercice2.Visualisation
             buildUnite(unite);
             buildValeur(valeur);
         }
+
+        public BuilderConcrete()
+        {
+
+        }
         public override void buildType(EnumType type)
         {
             visualisateur.setType(type);
@@ -27,6 +32,21 @@ namespace Exercice2.Visualisation
         public override void buildValeur(double valeur)
         {
             visualisateur.setValeur(valeur);
+        }
+
+        //methode qui change l'unité d'un visualisateur ; simulation d'un changement du systéme imperiale
+        public override void buildNewSystemUnite(Visualisateur visualisateur)
+        {
+            int uniteVisualValue = (int)visualisateur.getUnite();
+            int enumMemberCount = Enum.GetNames(typeof(EnumUnite)).Length;
+
+            for (int i=0; i< enumMemberCount; i++)
+            {
+                if (i != uniteVisualValue)
+                {
+                    visualisateur.setUnite((EnumUnite)i);
+                }
+            }
         }
     }
 }

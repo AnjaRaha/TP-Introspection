@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Serialize_Json/1.0.0": {
+        "runtime": {
+          "Serialize_Json.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Serialize_Json/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

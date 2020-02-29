@@ -1,6 +1,8 @@
-﻿using Exercice2.Enumerations;
+﻿using Exercice2.Capteur;
+using Exercice2.Enumerations;
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text;
 
 namespace  Exercice2.Visualisation
@@ -66,6 +68,34 @@ namespace  Exercice2.Visualisation
             Console.WriteLine("Valeur =" + getValeur());
         }
 
+        public void update(SensorObject capteur)
+        {
+            FieldInfo[] fields = capteur.GetType().GetFields(
+                       BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.GetProperty |
+                       BindingFlags.Instance);
+
+
+            foreach (FieldInfo field in fields)
+            {
+                if (field.Name.Equals("unite"))
+                {
+                    // Console.WriteLine("unite "+field.GetValue(capteur));
+                    setUnite((EnumUnite)field.GetValue(capteur));
+                }
+
+                if (field.Name.Equals("type"))
+                {
+                    // Console.WriteLine("type "+field.GetValue(capteur));
+                    setType((EnumType)field.GetValue(capteur));
+                }
+                if (field.Name.Equals("donnee"))
+                {
+                    //Console.WriteLine("donneeé " + field.GetValue(capteur));
+                    setValeur((Double)field.GetValue(capteur));
+                }
+            }
+
+        }
 
 
     }
