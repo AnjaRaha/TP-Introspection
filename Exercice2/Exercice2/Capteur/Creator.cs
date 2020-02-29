@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Exercice2.Capteur
 {
-    class Creator : Creator
+    abstract class Creator
     {
+        public abstract SensorObject CreationCapteur();
+      
     }
 }

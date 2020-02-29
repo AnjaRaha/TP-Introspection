@@ -1,10 +1,20 @@
-﻿using System;
+﻿using Exercice2.Enumerations;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Exercice2.Capteur
 {
-    class Humidimetre
+    [Capteur(EnumType.Humidite, EnumUnite.Humidite1)]
+    class Humidimetre : SensorObject
     {
+        public Humidimetre()
+        {
+            Type t = typeof(Humidimetre);
+            CapteurAttribute MyAttribute = (CapteurAttribute)Attribute.GetCustomAttribute(t, typeof(CapteurAttribute));
+
+            setType(MyAttribute.type);
+            setUnite(MyAttribute.unite);
+        }
     }
 }
