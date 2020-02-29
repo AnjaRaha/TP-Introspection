@@ -34,7 +34,7 @@ namespace Exercice2.Visualisation
             visualisateur.setValeur(valeur);
         }
 
-        //methode qui change l'unité d'un visualisateur ; simulation d'un changement du systéme imperiale
+        //methode qui change l'unité d'un visualisateur ; simulation d'un changement du systéme imperial
         public override void buildNewSystemUnite(Visualisateur visualisateur)
         {
             int uniteVisualValue = (int)visualisateur.getUnite();

@@ -56,10 +56,5 @@ namespace Exercice2.Capteur
             donnee = (random.NextDouble() * (100 - (0)) + (0));
         }
 
-        public void getClassName()
-        {
-            String className = this.GetType().Name;
-            Console.WriteLine("Name:" + className);
-        }
     }
 }

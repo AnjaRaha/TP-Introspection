@@ -17,19 +17,18 @@ namespace Exercice2.Capteur
 
 
         public Gestionnaire()
-        {
-           
+        {          
             this.typesConversions = new Dictionary<EnumUnite, EnumUnite>();
             this.systeme = new Dictionary<SensorObject, Visualisateur>();
 
-            updateTypesConversion();
-           
+            updateTypesConversion();         
         }
 
         public void updateTypesConversion()
         {
             Console.WriteLine();
-            System.Console.WriteLine("Liste Convertisseurs");
+            System.Console.WriteLine("Liste Convertisseurs :");
+
             // reflection  
             System.Attribute[] attrs = System.Attribute.GetCustomAttributes(typeof(Convertisseur));
 
@@ -56,24 +55,17 @@ namespace Exercice2.Capteur
 
         public void AjouterCapteur(SensorObject capteur)
         {
-
-
             // création d'un visualisateur
             BuilderVisualisateur builderConcrete = new BuilderConcrete(capteur.getType(),capteur.getUnite(), capteur.getDonnee());
 
             //ajout dans le dico 
-
-
             systeme.Add(capteur, builderConcrete.buildVisualisateur(capteur));
-
-
         }
 
         public void SupprimerCapteur(SensorObject capteur)
         {
-         
+     
                 systeme.Remove(capteur);
-
         }
 
    
@@ -90,12 +82,10 @@ namespace Exercice2.Capteur
             Console.WriteLine("/*************  Mise à jour des capteurs :" + String.Concat(" ********* Executed by ", Thread.CurrentThread.Name));
             Console.WriteLine();
 
-
             BuilderVisualisateur builderConcrete = new BuilderConcrete();
             foreach (KeyValuePair<SensorObject, Visualisateur> entry in systeme)
             {
                 entry.Key.emettreDonnees();
-
                 entry.Value.update(entry.Key);
                 entry.Value.Visualiser();
             }
@@ -120,8 +110,7 @@ namespace Exercice2.Capteur
                 {
                     typesConversions.Add(entry.Key.getUnite(), entry.Value.getUnite());
                 }
-                
-              
+                           
             }
             updateTypesConversion();
         }
