@@ -1,0 +1,11 @@
+C:\Users\Ramatoulaye Leye\Desktop\UQAC\UQAC_Session2\Patrons_modeles\TP2\TP-Introspection\Exercice2\Exercice2\obj\Debug\netcoreapp3.1\Exercice2.csprojAssemblyReference.cache
+C:\Users\Ramatoulaye Leye\Desktop\UQAC\UQAC_Session2\Patrons_modeles\TP2\TP-Introspection\Exercice2\Exercice2\obj\Debug\netcoreapp3.1\Exercice2.AssemblyInfoInputs.cache
+C:\Users\Ramatoulaye Leye\Desktop\UQAC\UQAC_Session2\Patrons_modeles\TP2\TP-Introspection\Exercice2\Exercice2\obj\Debug\netcoreapp3.1\Exercice2.AssemblyInfo.cs
+C:\Users\Ramatoulaye Leye\Desktop\UQAC\UQAC_Session2\Patrons_modeles\TP2\TP-Introspection\Exercice2\Exercice2\bin\Debug\netcoreapp3.1\Exercice2.exe
+C:\Users\Ramatoulaye Leye\Desktop\UQAC\UQAC_Session2\Patrons_modeles\TP2\TP-Introspection\Exercice2\Exercice2\bin\Debug\netcoreapp3.1\Exercice2.deps.json
+C:\Users\Ramatoulaye Leye\Desktop\UQAC\UQAC_Session2\Patrons_modeles\TP2\TP-Introspection\Exercice2\Exercice2\bin\Debug\netcoreapp3.1\Exercice2.runtimeconfig.json
+C:\Users\Ramatoulaye Leye\Desktop\UQAC\UQAC_Session2\Patrons_modeles\TP2\TP-Introspection\Exercice2\Exercice2\bin\Debug\netcoreapp3.1\Exercice2.runtimeconfig.dev.json
+C:\Users\Ramatoulaye Leye\Desktop\UQAC\UQAC_Session2\Patrons_modeles\TP2\TP-Introspection\Exercice2\Exercice2\bin\Debug\netcoreapp3.1\Exercice2.dll
+C:\Users\Ramatoulaye Leye\Desktop\UQAC\UQAC_Session2\Patrons_modeles\TP2\TP-Introspection\Exercice2\Exercice2\bin\Debug\netcoreapp3.1\Exercice2.pdb
+C:\Users\Ramatoulaye Leye\Desktop\UQAC\UQAC_Session2\Patrons_modeles\TP2\TP-Introspection\Exercice2\Exercice2\obj\Debug\netcoreapp3.1\Exercice2.dll
+C:\Users\Ramatoulaye Leye\Desktop\UQAC\UQAC_Session2\Patrons_modeles\TP2\TP-Introspection\Exercice2\Exercice2\obj\Debug\netcoreapp3.1\Exercice2.pdb

@@ -1,0 +1,11 @@
+C:\Users\tsile\Documents\A5\PATRON\Serialize_Json\Serialize_Json\bin\Debug\netcoreapp3.1\Serialize_Json.exe
+C:\Users\tsile\Documents\A5\PATRON\Serialize_Json\Serialize_Json\bin\Debug\netcoreapp3.1\Serialize_Json.deps.json
+C:\Users\tsile\Documents\A5\PATRON\Serialize_Json\Serialize_Json\bin\Debug\netcoreapp3.1\Serialize_Json.runtimeconfig.json
+C:\Users\tsile\Documents\A5\PATRON\Serialize_Json\Serialize_Json\bin\Debug\netcoreapp3.1\Serialize_Json.runtimeconfig.dev.json
+C:\Users\tsile\Documents\A5\PATRON\Serialize_Json\Serialize_Json\bin\Debug\netcoreapp3.1\Serialize_Json.dll
+C:\Users\tsile\Documents\A5\PATRON\Serialize_Json\Serialize_Json\bin\Debug\netcoreapp3.1\Serialize_Json.pdb
+C:\Users\tsile\Documents\A5\PATRON\Serialize_Json\Serialize_Json\obj\Debug\netcoreapp3.1\Serialize_Json.AssemblyInfoInputs.cache
+C:\Users\tsile\Documents\A5\PATRON\Serialize_Json\Serialize_Json\obj\Debug\netcoreapp3.1\Serialize_Json.AssemblyInfo.cs
+C:\Users\tsile\Documents\A5\PATRON\Serialize_Json\Serialize_Json\obj\Debug\netcoreapp3.1\Serialize_Json.dll
+C:\Users\tsile\Documents\A5\PATRON\Serialize_Json\Serialize_Json\obj\Debug\netcoreapp3.1\Serialize_Json.pdb
+C:\Users\tsile\Documents\A5\PATRON\Serialize_Json\Serialize_Json\obj\Debug\netcoreapp3.1\Serialize_Json.csprojAssemblyReference.cache
